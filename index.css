@@ -1,0 +1,83 @@
+/* Write your code here. */
+.notification-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.notification-image {
+  height: 3vh;
+  width: 10%;
+  align-self: center;
+}
+.info-msg {
+  align-self: center;
+  color: #ffffff;
+}
+.info-container {
+  background-color: #0b69ff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 7px;
+  margin-bottom: 5px;
+  height: 7vh;
+  width: 30%;
+}
+.success-container {
+  background-color: #2dca73;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  padding: 7px;
+  margin-bottom: 5px;
+  height: 7vh;
+  width: 30%;
+}
+.warning-container {
+  background-color: #ffb800;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 7px;
+  margin-bottom: 5px;
+  height: 7vh;
+  width: 30%;
+}
+.error-container {
+  background-color: #ff0b37;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 7px;
+  height: 7vh;
+  width: 30%;
+}
+@media (max-width: 576px) {
+  .info-msg {
+    font-family: "Roboto";
+    flex-shrink: 0px;
+  }
+  .notification-image {
+    flex-shrink: 0px;
+  }
+}
+@media (min-width: 768px) {
+  .info-container {
+    height: 7vh;
+    max-height: 10vh;
+  }
+  .success-container {
+    height: 7vh;
+    max-height: 10vh;
+  }
+  .warning-container {
+    height: 7vh;
+    max-height: 10vh;
+  }
+  .error-container {
+    height: 7vh;
+    max-height: 10vh;
+  }
+}
